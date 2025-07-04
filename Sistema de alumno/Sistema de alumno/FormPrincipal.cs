@@ -26,5 +26,12 @@ namespace Sistema_de_alumno
 
 
         }
+
+        private void claficacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calificacion frm = new Calificacion();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

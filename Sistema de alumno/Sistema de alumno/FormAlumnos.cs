@@ -36,7 +36,7 @@ namespace Sistema_de_alumno
         {
             string[] filas = new string[]
             {
-                txtmatricula.ToString (),
+                txtmatricula.Text,
                 txtnombre.Text,
                 txtapellido.Text,
                 txtedad.Text,
