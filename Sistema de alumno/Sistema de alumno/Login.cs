@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_de_alumno
 {
-    public partial class FormLogin : Form
+    public partial class Login : Form
     {
-        public FormLogin()
+        public Login()
         {
             InitializeComponent();
         }

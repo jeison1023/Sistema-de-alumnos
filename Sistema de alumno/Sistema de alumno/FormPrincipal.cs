@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,10 +11,9 @@ using System.Windows.Forms;
 
 namespace Sistema_de_alumno
 {
+    
     public partial class FormPrincipal : Form
     {
-        private int childFormNumber = 0;
-
         public FormPrincipal()
         {
             InitializeComponent();
@@ -29,9 +29,24 @@ namespace Sistema_de_alumno
 
         private void claficacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Calificacion frm = new Calificacion();
+            AreaCalificacion frm = new AreaCalificacion();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void actualizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
+        }
+
+        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

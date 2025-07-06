@@ -32,7 +32,7 @@
             this.txtapellido = new System.Windows.Forms.TextBox();
             this.txtedad = new System.Windows.Forms.TextBox();
             this.txtmatricula = new System.Windows.Forms.TextBox();
-            this.bnRegistrar = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -79,16 +79,16 @@
             this.txtmatricula.Size = new System.Drawing.Size(199, 34);
             this.txtmatricula.TabIndex = 46;
             // 
-            // bnRegistrar
+            // btnRegistrar
             // 
-            this.bnRegistrar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.bnRegistrar.Location = new System.Drawing.Point(589, 162);
-            this.bnRegistrar.Name = "bnRegistrar";
-            this.bnRegistrar.Size = new System.Drawing.Size(169, 49);
-            this.bnRegistrar.TabIndex = 44;
-            this.bnRegistrar.Text = "Registrar";
-            this.bnRegistrar.UseVisualStyleBackColor = false;
-            this.bnRegistrar.Click += new System.EventHandler(this.bnRegistrar_Click);
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnRegistrar.Location = new System.Drawing.Point(589, 162);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(169, 49);
+            this.btnRegistrar.TabIndex = 44;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.bnRegistrar_Click);
             // 
             // dataGridView1
             // 
@@ -194,7 +194,7 @@
             this.Controls.Add(this.txtapellido);
             this.Controls.Add(this.txtedad);
             this.Controls.Add(this.txtmatricula);
-            this.Controls.Add(this.bnRegistrar);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -220,7 +220,7 @@
         private System.Windows.Forms.TextBox txtapellido;
         private System.Windows.Forms.TextBox txtedad;
         private System.Windows.Forms.TextBox txtmatricula;
-        private System.Windows.Forms.Button bnRegistrar;
+        private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;

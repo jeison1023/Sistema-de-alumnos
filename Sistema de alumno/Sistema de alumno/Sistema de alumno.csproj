@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Sistema_de_alumno</RootNamespace>
     <AssemblyName>Sistema de alumno</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,23 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calificacion.cs">
+    <Compile Include="Alumno.cs" />
+    <Compile Include="AreaCalificacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calificacion.Designer.cs">
-      <DependentUpon>Calificacion.cs</DependentUpon>
+    <Compile Include="AreaCalificacion.Designer.cs">
+      <DependentUpon>AreaCalificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Calificacion.cs" />
     <Compile Include="FormAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAlumnos.Designer.cs">
       <DependentUpon>FormAlumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -72,14 +75,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Calificacion.resx">
-      <DependentUpon>Calificacion.cs</DependentUpon>
+    <EmbeddedResource Include="AreaCalificacion.resx">
+      <DependentUpon>AreaCalificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAlumnos.resx">
       <DependentUpon>FormAlumnos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
