@@ -48,5 +48,10 @@ namespace Sistema_de_alumno
         {
 
         }
+
+        private void elimininarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -82,6 +82,7 @@
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(176, 29);
             this.txtClave.TabIndex = 8;
+            this.txtClave.TextChanged += new System.EventHandler(this.txtClave_TextChanged);
             // 
             // txtUsuario
             // 

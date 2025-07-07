@@ -32,5 +32,10 @@ namespace Sistema_de_alumno
                 }
             }
         }
+
+        private void txtClave_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

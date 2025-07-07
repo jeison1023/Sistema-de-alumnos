@@ -82,7 +82,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnRegistrar.Location = new System.Drawing.Point(589, 162);
+            this.btnRegistrar.Location = new System.Drawing.Point(589, 149);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(169, 49);
             this.btnRegistrar.TabIndex = 44;
@@ -94,11 +94,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(97, 218);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 214);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(682, 323);
+            this.dataGridView1.Size = new System.Drawing.Size(734, 338);
             this.dataGridView1.TabIndex = 43;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -148,7 +148,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(482, 88);
+            this.label3.Location = new System.Drawing.Point(484, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 22);
             this.label3.TabIndex = 36;
@@ -188,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 564);
+            this.ClientSize = new System.Drawing.Size(799, 566);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.txtapellido);

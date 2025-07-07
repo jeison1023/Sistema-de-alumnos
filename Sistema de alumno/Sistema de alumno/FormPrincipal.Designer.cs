@@ -117,6 +117,7 @@
             this.elimininarToolStripMenuItem.Name = "elimininarToolStripMenuItem";
             this.elimininarToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.elimininarToolStripMenuItem.Text = "Eliminar ";
+            this.elimininarToolStripMenuItem.Click += new System.EventHandler(this.elimininarToolStripMenuItem_Click);
             // 
             // eliminarAlumnoToolStripMenuItem
             // 
@@ -191,6 +192,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormPrincipal";
             this.Text = "FormPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
