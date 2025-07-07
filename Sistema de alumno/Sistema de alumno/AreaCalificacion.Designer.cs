@@ -109,7 +109,7 @@
             // 
             // txtexamen
             // 
-            this.txtexamen.Location = new System.Drawing.Point(295, 134);
+            this.txtexamen.Location = new System.Drawing.Point(294, 134);
             this.txtexamen.Multiline = true;
             this.txtexamen.Name = "txtexamen";
             this.txtexamen.Size = new System.Drawing.Size(163, 33);

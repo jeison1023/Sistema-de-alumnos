@@ -82,7 +82,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnRegistrar.Location = new System.Drawing.Point(589, 149);
+            this.btnRegistrar.Location = new System.Drawing.Point(589, 139);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(169, 49);
             this.btnRegistrar.TabIndex = 44;

@@ -43,7 +43,6 @@
             this.pDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarUnAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -129,8 +128,7 @@
             // 
             this.guardarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.guardarComoToolStripMenuItem,
-            this.exportarToolStripMenuItem,
-            this.exportarUnAlumnoToolStripMenuItem});
+            this.exportarToolStripMenuItem});
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
             this.guardarToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.guardarToolStripMenuItem.Text = "Guardar";
@@ -169,12 +167,6 @@
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
             this.cToolStripMenuItem.Size = new System.Drawing.Size(118, 26);
             this.cToolStripMenuItem.Text = "CSV";
-            // 
-            // exportarUnAlumnoToolStripMenuItem
-            // 
-            this.exportarUnAlumnoToolStripMenuItem.Name = "exportarUnAlumnoToolStripMenuItem";
-            this.exportarUnAlumnoToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
-            this.exportarUnAlumnoToolStripMenuItem.Text = "Exportar un alumno";
             // 
             // salirToolStripMenuItem
             // 
@@ -215,7 +207,6 @@
         private System.Windows.Forms.ToolStripMenuItem pDFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportarUnAlumnoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem1;
     }
