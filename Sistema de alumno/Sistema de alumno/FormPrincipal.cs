@@ -53,5 +53,30 @@ namespace Sistema_de_alumno
         {
 
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            {
+                // Mostrar un cuadro de diálogo de confirmación 
+
+                {
+                    DialogResult resultado = MessageBox.Show(
+                        "¿Estás seguro que deseas cerrar?",
+                        "Confirmación",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question
+                    );
+
+                    if (resultado == DialogResult.Yes)
+                    {
+                        Application.Exit();  // Cierra toda la aplicación
+                    }
+                }
+
+
+            }
+        }
     }
 }
+    
+
