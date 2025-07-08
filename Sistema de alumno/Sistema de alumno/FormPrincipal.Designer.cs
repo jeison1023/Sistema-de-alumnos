@@ -83,8 +83,8 @@
             // claficacionToolStripMenuItem
             // 
             this.claficacionToolStripMenuItem.Name = "claficacionToolStripMenuItem";
-            this.claficacionToolStripMenuItem.Size = new System.Drawing.Size(231, 34);
-            this.claficacionToolStripMenuItem.Text = "Claficacion ";
+            this.claficacionToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.claficacionToolStripMenuItem.Text = "Calificacion ";
             this.claficacionToolStripMenuItem.Click += new System.EventHandler(this.claficacionToolStripMenuItem_Click);
             // 
             // nuevoAlumnoToolStripMenuItem
@@ -165,6 +165,7 @@
             // 
             // salirToolStripMenuItem
             // 
+            this.salirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.salirToolStripMenuItem.Text = "Salir";
@@ -174,6 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(1000, 710);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
