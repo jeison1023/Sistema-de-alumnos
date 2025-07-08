@@ -155,7 +155,14 @@ namespace Sistema_de_alumno
 
 
     }
-}
+
+        private void eliminarAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEliminarAlumno frm = new FormEliminarAlumno();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+    }
 }
     
 
