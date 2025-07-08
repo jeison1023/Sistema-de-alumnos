@@ -47,6 +47,13 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // claficacionToolStripMenuItem
+            // 
+            claficacionToolStripMenuItem.Name = "claficacionToolStripMenuItem";
+            claficacionToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            claficacionToolStripMenuItem.Text = "Calificacion ";
+            claficacionToolStripMenuItem.Click += new System.EventHandler(this.claficacionToolStripMenuItem_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -60,7 +67,6 @@
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(889, 28);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
@@ -80,17 +86,10 @@
             this.crearToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.crearToolStripMenuItem.Text = "Crear ";
             // 
-            // claficacionToolStripMenuItem
-            // 
-            claficacionToolStripMenuItem.Name = "claficacionToolStripMenuItem";
-            claficacionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            claficacionToolStripMenuItem.Text = "Calificacion ";
-            claficacionToolStripMenuItem.Click += new System.EventHandler(this.claficacionToolStripMenuItem_Click);
-            // 
             // nuevoAlumnoToolStripMenuItem
             // 
             this.nuevoAlumnoToolStripMenuItem.Name = "nuevoAlumnoToolStripMenuItem";
-            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.nuevoAlumnoToolStripMenuItem.Text = "Nuevo alumno";
             this.nuevoAlumnoToolStripMenuItem.Click += new System.EventHandler(this.nuevoAlumnoToolStripMenuItem_Click);
             // 
@@ -122,7 +121,7 @@
             // eliminarAlumnoToolStripMenuItem
             // 
             this.eliminarAlumnoToolStripMenuItem.Name = "eliminarAlumnoToolStripMenuItem";
-            this.eliminarAlumnoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.eliminarAlumnoToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
             this.eliminarAlumnoToolStripMenuItem.Text = "Eliminar alumno";
             this.eliminarAlumnoToolStripMenuItem.Click += new System.EventHandler(this.eliminarAlumnoToolStripMenuItem_Click);
             // 
@@ -140,7 +139,7 @@
             this.guardarComoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pDFToolStripMenuItem});
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.guardarComoToolStripMenuItem.Text = "Guardar como";
             // 
             // pDFToolStripMenuItem
@@ -154,13 +153,14 @@
             this.exportarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cToolStripMenuItem});
             this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
-            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exportarToolStripMenuItem.Text = "Exportar";
+            this.exportarToolStripMenuItem.Click += new System.EventHandler(this.exportarToolStripMenuItem_Click);
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(118, 26);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.cToolStripMenuItem.Text = "CSV";
             this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 
@@ -180,7 +180,7 @@
             this.ClientSize = new System.Drawing.Size(889, 568);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormPrincipal";
             this.Text = "FormPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -142,9 +142,9 @@ namespace Sistema_de_alumno
             {
                 ExportarDataGridViewACsv(formAlumnos.Controls.OfType<DataGridView>().FirstOrDefault(), "Alumnos");
             }
-            else if (activeForm is AreaCalificacion formCalificaciones)
+            else if (activeForm is AreaCalificacion Calificaciones)
             {
-                ExportarDataGridViewACsv(formCalificaciones.Controls.OfType<DataGridView>().FirstOrDefault(), "Calificaciones");
+                ExportarDataGridViewACsv(Calificaciones.Controls.OfType<DataGridView>().FirstOrDefault(), "Calificaciones");
             }
             else
             {
@@ -161,6 +161,11 @@ namespace Sistema_de_alumno
             FormEliminarAlumno frm = new FormEliminarAlumno();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void exportarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
