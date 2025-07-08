@@ -39,7 +39,6 @@
             this.eliminarAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.csvToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -138,17 +137,10 @@
             // guardarComoToolStripMenuItem
             // 
             this.guardarComoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.csvToolStripMenuItem,
             this.pDFToolStripMenuItem});
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.guardarComoToolStripMenuItem.Text = "Guardar como";
-            // 
-            // csvToolStripMenuItem
-            // 
-            this.csvToolStripMenuItem.Name = "csvToolStripMenuItem";
-            this.csvToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
-            this.csvToolStripMenuItem.Text = "CSV";
             // 
             // pDFToolStripMenuItem
             // 
@@ -207,7 +199,6 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarAlumnoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem guardarComoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem csvToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pDFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cToolStripMenuItem;
