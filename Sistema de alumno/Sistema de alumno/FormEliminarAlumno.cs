@@ -65,7 +65,7 @@ namespace Sistema_de_alumno
             }
             else
             {
-                dgvAlumnoEncontrado.DataSource = null; // Clear DataGridView if no student is found
+                dgvAlumnoEncontrado.DataSource = null; 
                 MessageBox.Show($"No se encontró ningún alumno con la matrícula '{matriculaBuscada}'.", "No Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -139,6 +139,11 @@ namespace Sistema_de_alumno
                 }
 
             }
+        }
+
+        private void FormEliminarAlumno_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
