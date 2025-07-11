@@ -34,8 +34,10 @@ namespace Sistema_de_alumno
         {
             get
             {
+                
                 double promedioParciales = (Calificacion1 + Calificacion2 + Calificacion3) / 3.0;
-                return (promedioParciales * 0.70) + (Calificacion4 * 0.30);
+                double rawTotal = (promedioParciales * 0.70) + (Calificacion4 * 0.30);
+                return Math.Round(rawTotal);
             }
         }
 
