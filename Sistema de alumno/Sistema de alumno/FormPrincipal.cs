@@ -167,7 +167,130 @@ namespace Sistema_de_alumno
         {
 
         }
+
+        private void pDFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        {
+            DialogResult resultado = MessageBox.Show(
+                "¿Estás seguro que deseas guardar como PDF?",
+                "Confirmación",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                try
+                {
+                    //  Mostrar diálogo para elegir ubicación y nombre del archivo
+                    SaveFileDialog saveDialog = new SaveFileDialog();
+                    saveDialog.Title = "Guardar informe PDF";
+                    saveDialog.Filter = "Archivo PDF (*.pdf)|*.pdf";
+                    saveDialog.FileName = "Calificaciones_Alumnos.pdf";
+
+                    if (saveDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string rutaArchivo = saveDialog.FileName;
+
+                        iTextSharp.text.Document doc = new iTextSharp.text.Document(iTextSharp.text.PageSize.A4);
+                        iTextSharp.text.pdf.PdfWriter writer = iTextSharp.text.pdf.PdfWriter.GetInstance(doc, new FileStream(rutaArchivo, FileMode.Create));
+                        doc.Open();
+
+                        //  Encabezado
+                        iTextSharp.text.Font tituloFont = iTextSharp.text.FontFactory.GetFont(
+                            iTextSharp.text.FontFactory.HELVETICA_BOLD, 18, iTextSharp.text.BaseColor.BLUE);
+                        doc.Add(new iTextSharp.text.Paragraph("INFORME DE CALIFICACIONES Y ALUMNOS", tituloFont));
+                        doc.Add(iTextSharp.text.Chunk.NEWLINE);
+
+                        //  CALIFICACIONES
+                        iTextSharp.text.Font subtituloFont = iTextSharp.text.FontFactory.GetFont(
+                            iTextSharp.text.FontFactory.HELVETICA_BOLD, 14, iTextSharp.text.BaseColor.BLACK);
+                        doc.Add(new iTextSharp.text.Paragraph("📘 CALIFICACIONES", subtituloFont));
+                        doc.Add(iTextSharp.text.Chunk.NEWLINE);
+
+                        iTextSharp.text.pdf.PdfPTable tablaCalificaciones = new iTextSharp.text.pdf.PdfPTable(12);
+                        tablaCalificaciones.WidthPercentage = 100;
+
+                        string[] encabezados1 = {
+                    "Matrícula", "Nombre", "Apellido", "Materia", "Examen",
+                    "C1", "C2", "C3", "C4", "Total", "Clasificación", "Estado"
+                };
+
+                        foreach (string texto in encabezados1)
+                        {
+                            var celda = new iTextSharp.text.pdf.PdfPCell(new iTextSharp.text.Phrase(texto,
+                                iTextSharp.text.FontFactory.GetFont(iTextSharp.text.FontFactory.HELVETICA_BOLD, 10)))
+                            {
+                                BackgroundColor = iTextSharp.text.BaseColor.LIGHT_GRAY
+                            };
+                            tablaCalificaciones.AddCell(celda);
+                        }
+
+                        foreach (var c in AreaCalificacion.ListaCalificaciones)
+                        {
+                            tablaCalificaciones.AddCell(c.MatriculaAlumno);
+                            tablaCalificaciones.AddCell(c.NombreAlumno);
+                            tablaCalificaciones.AddCell(c.ApellidoAlumno);
+                            tablaCalificaciones.AddCell(c.Materia);
+                            tablaCalificaciones.AddCell(c.Examen);
+                            tablaCalificaciones.AddCell(c.Calificacion1.ToString());
+                            tablaCalificaciones.AddCell(c.Calificacion2.ToString());
+                            tablaCalificaciones.AddCell(c.Calificacion3.ToString());
+                            tablaCalificaciones.AddCell(c.Calificacion4.ToString());
+                            tablaCalificaciones.AddCell(c.TotalCalificacion.ToString());
+                            tablaCalificaciones.AddCell(c.Clasificacion);
+                            tablaCalificaciones.AddCell(c.Estado);
+                        }
+
+                        doc.Add(tablaCalificaciones);
+                        doc.Add(iTextSharp.text.Chunk.NEWLINE);
+
+                        //  ALUMNOS
+                        doc.Add(new iTextSharp.text.Paragraph("📗 DATOS DE ALUMNOS", subtituloFont));
+                        doc.Add(iTextSharp.text.Chunk.NEWLINE);
+
+                        iTextSharp.text.pdf.PdfPTable tablaAlumnos = new iTextSharp.text.pdf.PdfPTable(3);
+                        tablaAlumnos.WidthPercentage = 70;
+
+                        string[] encabezados2 = { "Matrícula", "Nombre", "Apellido" };
+
+                        foreach (string texto in encabezados2)
+                        {
+                            var celda = new iTextSharp.text.pdf.PdfPCell(new iTextSharp.text.Phrase(texto,
+                                iTextSharp.text.FontFactory.GetFont(iTextSharp.text.FontFactory.HELVETICA_BOLD, 10)))
+                            {
+                                BackgroundColor = iTextSharp.text.BaseColor.LIGHT_GRAY
+                            };
+                            tablaAlumnos.AddCell(celda);
+                        }
+
+                        foreach (var a in FormAlumnos.ListaAlumnos)
+                        {
+                            tablaAlumnos.AddCell(a.Matricula);
+                            tablaAlumnos.AddCell(a.Nombre);
+                            tablaAlumnos.AddCell(a.Apellido);
+                        }
+
+                        doc.Add(tablaAlumnos);
+                        doc.Close();
+
+                        MessageBox.Show("PDF guardado exitosamente 🎉", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("La operación fue cancelada por el usuario.", "Cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al guardar PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+
     }
+}
 }
     
 
